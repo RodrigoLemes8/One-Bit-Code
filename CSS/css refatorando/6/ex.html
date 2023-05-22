@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Especificidade</title>
+    <style>
+      * {
+        color: red;
+      }
+      div {
+        color: blue;
+      }
+      section div {
+        color: blueviolet;
+      }
+      .minha-classe {
+        color: yellow;
+      }
+      #meu-id {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="minha-classe" id="meu-id">Minha Div</div>
+    </section>
+  </body>
+</html>

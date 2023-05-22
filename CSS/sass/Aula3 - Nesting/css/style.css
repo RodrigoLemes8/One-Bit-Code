@@ -1,0 +1,18 @@
+.Classe1 ul {
+  background-color: red;
+}
+.Classe1 li {
+  background-color: blue;
+  padding: 10px 0px;
+}
+.Classe1 button {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.Classe1 button:hover {
+  background-color: red;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=style.css.map */

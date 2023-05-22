@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Montserrat&family=Open+Sans:ital@1&family=Roboto&family=Satisfy&display=swap");
+body {
+  background-color: black;
+  background-image: url(https://img.freepik.com/fotos-premium/cena-de-futebol-no-estadio-com-close-up-de-uma-chuteira-de-futebol_207634-5556.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-position: 60% 6%;
+  background-size: cover;
+}
+
+.img1 {
+  border-width: 0px;
+  border-style: solid;
+  color: #eeff02;
+  border-radius: 30px;
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 100px;
+}
+
+.img2 {
+  border-width: 0px;
+  border-style: solid;
+  color: #32f032;
+  border-radius: 30px;
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+.img3 {
+  border-color: aqua;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 30px;
+  display: block;
+  margin-left: 350px;
+  margin-bottom: 100px;
+}
+
+.text1 {
+  padding: 10px 5px 10px 10px;
+  color: #030300;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 550px;
+  font-family: Roboto;
+  text-decoration: underline;
+}
+.text2 {
+  padding: 10px 5px 10px 10px;
+  color: black;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 550px;
+  font-family: Roboto;
+  text-decoration: underline;
+}
+.text3 {
+  padding: 10px 5px 10px 10px;
+  border-width: 0px;
+  border-radius: 5px;
+  border-style: solid;
+  color: black;
+  display: inline-block;
+  margin-left: 450px;
+  font-family: Roboto;
+  text-decoration: underline;
+}
+
+.div3 {
+  margin-left: 200px;
+  display: inline-block;
+}
+
+.div2 {
+  margin-left: 200px;
+  display: inline-block;
+}
+
+.div1 {
+  margin-left: 200px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.box {
+  border: rgba(2, 2, 0, 0.082) 5px solid;
+  border-radius: 200px;
+  font-size: 20px;
+  font-family: Roboto;
+  text-align: center;
+  color: black;
+  padding: 50px 100px 50px 100px;
+  display: inline-block;
+  margin-left: 200px;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,36 @@
+li {
+  color: #2c87ff;
+  font-size: 30px;
+}
+h1 {
+  color: #8df4ff;
+  font-size: 50px;
+  border-color: #06323f;
+  border-width: 8px;
+  border-style: dashed;
+
+  border: 8px double #06323f;
+}
+h4 {
+  color: #2c87ff;
+}
+
+body {
+  background-image: url(https://s.yimg.com/ny/api/res/1.2/WKuw3Sc6.hy56_HpDdtuWg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MTE-/https://s.yimg.com/os/creatr-uploaded-images/2022-08/d60dcbe0-3087-11ed-9fd7-3ebb5f650e8f);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.aqua-text {
+  color: aqua;
+  font-size: 20px;
+}
+
+.big-text {
+  font-size: 40px;
+}
+
+#Venus-text {
+  font-size: 20px;
+  color: black;
+}

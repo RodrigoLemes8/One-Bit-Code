@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        margin: 5px;
+        border-style: solid;
+      }
+      .calc {
+        width: calc(100% - 100); /* permite que você faça calculos */
+      }
+
+      .rgb {
+        background-color: rgb(0, 255, 100); /* define uma cor em RGB */
+      }
+
+      .rgba {
+        background-color: rgb(
+          0,
+          255,
+          100,
+          0.5
+        ); /* define uma cor em RGB com trasnsparencia, onde o ultimo parametro vai de 0.0 a 1.0, onde 1 é 100% preenchido e 0 é totalmente transparente */
+      }
+
+      .rotate {
+        transform: rotate(
+          10deg
+        ); /* utilizada junto com a propriedade transform, rotaciona o elemento */
+      }
+
+      .max {
+        width: max(
+          40%,
+          400px
+        ); /* utilizada o maior valor, se 40% for maior que 400px usa o 40% caso contrario usa o 400px */
+      }
+      .min {
+        width: min(40%, 200px); /* utilizada o menor valor, oposto do max */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calc rgb">calc e rgb</div>
+    <div class="max rgba">max e rgba</div>
+    <br />
+    <div class="min rotate">min rotate</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Montserrat&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Montserrat&family=Roboto&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Montserrat&family=Open+Sans:ital@1&family=Roboto&family=Satisfy&display=swap");
+
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+h1 {
+  font-family: Montserrat, sans-seri;
+}
+
+.post-container .date {
+  font-family: Roboto, sans-seri;
+  color: #008080;
+}
+.post-container {
+  background-color: #fffafa;
+  width: 70%;
+  height: 100%;
+  margin: 0px auto 0px auto;
+}
+
+.post-container div .post-content {
+  width: 90%;
+  margin-bottom: 50px;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
+}
+
+.post {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+}

@@ -1,0 +1,5 @@
+Document Object Model*, ou Modelo de Objeto de Documento
+
+Permite que um documento escrito em uma linguagem de
+marcação (HTML, XML, etc) seja acessado pelo javascript
+https://www.mindmeister.com/map/2544450214

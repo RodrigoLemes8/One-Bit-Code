@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../../Image/backgroundLp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+
+.container1 {
+  background-color: $background-color;
+  width: 450px;
+  height: auto;
+}
+
+.top-logo {
+  width: 185px;
+}
+
+.paragraph {
+  margin: 8px 0px;
+}
+
+.btnSucess {
+  color: $button-color;
+  border: 1px solid $button-color;
+  &:hover {
+    color: white;
+  }
+}
+
+.fotter {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
