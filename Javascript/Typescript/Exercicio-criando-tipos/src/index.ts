@@ -66,3 +66,53 @@ function removeSatellite(name: string, planet: Planet) {
 
   alert(`O satélite ${name} foi removido do planeta ${planet.name}.`)
 }
+
+// Funções Auxiliares
+
+function promptValidSituation() {
+  let situation: PlanetSituation
+  let validSituation = false
+
+  while (!validSituation) {
+    const situationInput = prompt('Informe a situação do planeta?\n1 - Habitado\n2 - Habitável\n3 - Inabitável\n4 - Inexplorado')
+
+    switch (situationInput) {
+      case '1':
+        situation = 'Habitado'
+        validSituation = true
+        break;
+      case '2':
+        situation = 'Habitável'
+        validSituation = true
+        break;
+      case '3':
+        situation = 'Inabitável'
+        validSituation = true
+        break;
+      case '4':
+        situation = 'Inexplorado'
+        validSituation = true
+        break;
+      default:
+        alert('Situação inválida!')
+        break;
+    }
+  }
+
+  return situation
+}
+
+// Aqui anotamos os tipos da função callback
+// para facilitar a sua implementação futura
+function promptValidPlanet(callback: (planet: Planet) => void) {
+  const planetName = prompt('Informe o nome do planeta:')
+  const planet = findPlanet(planetName)
+
+  // Aqui podemos reparar que o VS Code nos
+  // avisa sobre o tipo Union de planet
+  if (planet) {
+    callback(planet)
+  } else {
+    alert('Planeta não encontrado! Retornando ao menu...')
+  }
+}
