@@ -162,3 +162,28 @@ function fourthMenuOption() {
     removeSatellite(satellite, planet)
   })
 }
+
+function fifthMenuOption() {
+  let list = 'Planetas:\n'
+
+  planets.forEach(planet => {
+    // Repare que as tuplas são uma forma fácil de permitir a
+    // desestruturação com qualquer nome nas variáveis.
+    // As variáveis a seguir podem ter qualquer nome pois a
+    // tupla segue um padrão fixo.
+    const [a, b, c, d] = planet.coordinates
+
+    list += `
+      Nome: ${planet.name}
+      Coordenadas: (${a}, ${b}, ${c}, ${d})
+      Situação: ${planet.situation}
+      Satélites: ${planet.satellites.length}
+    `
+
+    planet.satellites.forEach(satellite => {
+      list += `    - ${satellite}\n`
+    })
+  })
+
+  alert(list)
+}
