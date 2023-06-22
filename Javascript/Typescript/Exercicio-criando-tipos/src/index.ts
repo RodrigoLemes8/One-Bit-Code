@@ -116,3 +116,24 @@ function promptValidPlanet(callback: (planet: Planet) => void) {
     alert('Planeta não encontrado! Retornando ao menu...')
   }
 }
+
+// Opções do Menu
+
+function firstMenuOption() {
+  const name = prompt('Informe o nome do planeta:')
+  const coordinateA = Number(prompt('Informe a primeira coordenada:'))
+  const coordinateB = Number(prompt('Informe a segunda coordenada:'))
+  const coordinateC = Number(prompt('Informe a terceira coordenada:'))
+  const coordinateD = Number(prompt('Informe a quarta coordenada:'))
+
+  // Aqui a nossa função ajuda a ter um código mais organizado
+  const situation = promptValidSituation()
+
+  const confirmation = confirm(`Confirma o registro do planeta ${name}?
+  Coordenadas: (${coordinateA}, ${coordinateB}, ${coordinateC}, ${coordinateD})
+  Situação: ${situation}`)
+
+  if (confirmation) {
+    addPlanet(name, [coordinateA, coordinateB, coordinateC, coordinateD], situation)
+  }
+}
