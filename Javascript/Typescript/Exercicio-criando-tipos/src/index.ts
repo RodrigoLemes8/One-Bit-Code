@@ -187,3 +187,44 @@ function fifthMenuOption() {
 
   alert(list)
 }
+
+// Menu
+
+let userOption = 0
+
+while (userOption !== 6) {
+  const menu = `Menu
+    1 - Registrar um novo planeta
+    2 - Atualizar situação do planeta
+    3 - Adicionar um satélite ao planeta
+    4 - Remover um satélite do planeta
+    5 - Lista todos os planetas
+    6 - Sair
+  `
+
+  userOption = Number.parseInt(prompt(menu))
+
+  switch (userOption) {
+    case 1:
+      firstMenuOption()
+      break
+    case 2:
+      secondMenuOption()
+      break
+    case 3:
+      thirdMenuOption()
+      break
+    case 4:
+      fourthMenuOption()
+      break
+    case 5:
+      fifthMenuOption()
+      break
+    case 6:
+      alert('Encerrando o sistema...')
+      break
+    default:
+      alert('Opção inválida! Retornando ao painel principal...')
+      break;
+  }
+}
