@@ -137,3 +137,28 @@ function firstMenuOption() {
     addPlanet(name, [coordinateA, coordinateB, coordinateC, coordinateD], situation)
   }
 }
+
+// Nessas três funções vemos como a nossa função de callback
+// proporciona uma facilidade enorme na implementação
+function secondMenuOption() {
+  // Além disso temos acesso automático às informações
+  // dos argumentos, nesse caso a variável planet
+  promptValidPlanet(planet => {
+    const situation = promptValidSituation()
+    updateSituation(situation, planet)
+  })
+}
+
+function thirdMenuOption() {
+  promptValidPlanet(planet => {
+    const satellite = prompt('Informe o nome do satélite a ser adicionado:')
+    addSatellite(satellite, planet)
+  })
+}
+
+function fourthMenuOption() {
+  promptValidPlanet(planet => {
+    const satellite = prompt('Informe o nome do satélite a ser removido:')
+    removeSatellite(satellite, planet)
+  })
+}
